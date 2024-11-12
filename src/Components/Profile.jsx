@@ -1,35 +1,78 @@
-import { Card, Dropdown } from "flowbite-react";
-import Image from "../assets/1.jpeg";
+import { Card } from "flowbite-react";
+import Image from "../assets/pp.jpg";
 
 export const Profile = () => {
-
     return (
-        <Card className="max-w-full m-3">
-          <div className="flex justify-between px-4 pt-4 flex-wrap">
-          </div>
+        <div className="bg-gray-100 min-h-screen p-6 flex justify-center">
+            <Card className="w-full max-w-4xl p-6 shadow-lg">
+                <div className="bg-gray-800 text-white p-6 rounded-t-lg flex flex-col items-center">
+                    <img
+                        alt="Photo Profile"
+                        src={Image}
+                        className="rounded-full w-24 h-24 mb-4 border-4 border-white"
+                    />
+                    <h1 className="text-3xl font-bold">Ananda Puttra</h1>
+                    <span className="text-lg">Software Enginner</span>
+                </div>
 
-          <div className="flex items-center pb-10 space-x-4"> {/* Menambahkan flex dan space-x-4 */}
-            <img
-              alt="Photo Profile"
-              height="96"
-              src={Image}
-              width="96"
-              className="rounded-full shadow-lg"
-            />
+                {/* Content */}
+                <div className="flex flex-col md:flex-row gap-8 p-6">
+                    {/* Left Side - Contact, Portfolio, Skills */}
+                    <div className="w-full md:w-1/3">
+                        {/* Contact */}
+                        <h2 className="text-lg font-semibold text-gray-800">Contact</h2>
+                        <ul className="text-gray-700 mt-2 space-y-1">
+                            <li>Phone   : <a href="https://wa.me/6281220995629" target="_blank" className="text-blue-600">+62 812-2099-5629</a></li>
+                            <li>Email   : <a href="https://anandaputtra270608@gmail.com" target="_blank" className="text-blue-600">anandaputtra270608@gmail.com</a></li>
+                            <li>GitHub  : <a href="https://github.com/Nann-Zy" target="_blank" className="text-blue-600">https://github.com/Nann-Zy</a></li>
+                        </ul>
 
-            <div className="flex flex-col">
-              <h5 className="text-xl font-medium text-gray-900 dark:text-white">Ananda Puttra</h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">Software Engineer</span>
-            </div>
-          </div>
 
-          <div className="mt-4 space-y-2">
-            <h5 className="text-xl font-medium text-gray-900 dark:text-white">Ananda Puttra</h5>
-            <h2>Phone: +62 812-2099-5629</h2>
-            <h5>Email: nand@Gmail.com</h5>
-            <h5>GitHub: [Your GitHub Link]</h5>
-            <h5>LinkedIn: [Your LinkedIn Link]</h5>
-          </div>
-        </Card>
+                        {/* Portfolio */}
+                        <h2 className="text-lg font-semibold text-gray-800 mt-6">Sertifikat</h2>
+                        <p className="text-gray-700 mt-2">-</p>
+
+                        {/* Skills */}
+                        <h2 className="text-lg font-semibold text-gray-800 mt-6">Skills</h2>
+                        <ul className="text-gray-700 mt-2 space-y-1">
+                            <li>PHP</li>
+                            <li>JavaScirpt</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>React.js</li>
+                            <li>Design Web</li>
+                        </ul>
+                    </div>
+
+                    {/* Right Side - Summary, Education, Work Experience */}
+                    <div className="w-full md:w-2/3">
+                        {/* Summary */}
+                        <h2 className="text-lg font-semibold text-gray-800">Pengenalan</h2>
+                        <p className="text-gray-700 mt-2">
+                            -
+                        </p>
+
+                        {/* Education */}
+                        <h2 className="text-lg font-semibold text-gray-800 mt-6">Education</h2>
+                        <p className="text-gray-700 mt-2">
+                            <strong>SMK Prakarya Internasional</strong><br />
+                            2023 - 2026, Pengembangan Perangkat Lunak Dan Gim
+                        </p>
+
+                        {/* Work Experience */}
+                        <h2 className="text-lg font-semibold text-gray-800 mt-6">Pengalaman Kerja</h2>
+                        <div className="text-gray-700 mt-2 space-y-4">
+                            <div>
+                                <strong>Nama Industri/PT</strong><br/>
+                                Tanggal
+                                <ul className="list-disc list-inside mt-2 space-y-1">
+                                    <li>Penagalaman di industri nanti</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Card>
+        </div>
     );
 };
