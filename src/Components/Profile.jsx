@@ -17,8 +17,28 @@ export const Profile = () => {
                         <div className="flex justify-center items-center flex-col space-y-3 text-lg font-medium leading-6">
                             <h3 className="text-white">Ananda Puttra</h3>
                             <p className="text-indigo-300">Junior Developer</p>
+
+
+                        <div className="mt-4 flex justify-center space-x-4">
+                            {/* Tombol Contact */}
+                            <button
+                                className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 focus:outline-none"
+                            >
+                                About
+                            </button>
+                            {/* Tombol Download CV */}
+                            <a
+                                href="/path/to/your-cv.pdf" // cv me
+                                download
+                                className="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-800 focus:outline-none"
+                            >
+                                Download CV
+                            </a>
+                        </div>
                             <div className="flex justify-center mt-5 space-x-5">
-                                {/* Twitter */}
+                                
+                                {/* Social Media Links */}
+                                
                                 <a
                                     href="#"
                                     target="_blank"
