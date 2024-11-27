@@ -1,10 +1,16 @@
-import React from 'react';
-import { Profile } from './Profile'; // Ensure the path to the Profile component is correct
-// import Image from './assets/pp.jpg'; // Replace with the actual path to your image
+import React from "react";
+import { motion } from "framer-motion"; // Import Framer Motion
+import Image from "../assets/pp.jpg";
 
 export const About = () => {
   return (
-    <div className="sm:flex items-center max-w-screen-xl">
+    <motion.div
+      id="about"
+      className="sm:flex items-center max-w-screen-xl"
+      initial={{ opacity: 1, y: 60 }} // Awal animasi
+      animate={{ opacity: 5, y: 0 }} // Akhir animasi
+      transition={{ duration: 1.8, ease: "easeInOut" }} // Durasi dan jenis animasi
+    >
       <div className="sm:w-1/2 p-10">
         <div className="image object-center text-center">
           <img
@@ -16,18 +22,18 @@ export const About = () => {
       </div>
       <div className="sm:w-1/2 p-5">
         <div className="text">
-          <span className="text-gray-500 border-b-2 border-indigo-600 uppercase">About us</span>
           <h2 className="my-4 font-bold text-3xl sm:text-4xl">
-            About <span className="text-indigo-600">Our Company</span>
-          </h2>
-          <p className="text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, commodi
-            doloremque, fugiat illum magni minus nisi nulla numquam obcaecati placeat quia, repellat tempore
-            voluptatum.
+            About me
+          </h2> 
+          <p className="text-grey">
+            Let me introduce myself, I am Ananda Puttra, a passionate Junior
+            Developer with foundational experience in web development. I possess
+            skills in building websites and the ability to collaborate
+            effectively within a team to deliver innovative technological
+            solutions.
           </p>
         </div>
       </div>
-      <Profile /> {/* Including the Profile component here */}
-    </div>
+    </motion.div>
   );
 };

@@ -1,21 +1,15 @@
-import { useState } from 'react'
-import {Header} from './Components/Header'
-import {Profile} from './Components/Profile'
-// import {Home} from './Components/Home'
- import {About} from './Components/About'
-// import {Skill} from './Components/Skill'
-// import {Project} from './Components/Project'
-// import {Contact} from './Components/Contact'
+import { Header } from './Components/Header';
+import { Profile } from './Components/Profile';
+import { About } from './Components/About';
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return(
-    <>
-    <Header />
-    <Profile />
-    </>
-  )
+  return (
+    <div className="bg-white min-h-screen"> {/* Tambahkan bg-white */}
+      <Header />
+      <Profile />
+      <About />
+    </div>
+  );
 }
 
-export default App
+export default App;
