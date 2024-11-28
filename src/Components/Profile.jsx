@@ -5,6 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 export const Profile = () => {
     return (
+        <div id="home">
         <div className="flex justify-center items-center h-screen bg-gray-100">
             <div className="w-96 px-6 py-6 text-center bg-white bg-opacity-80 backdrop-blur-lg rounded-lg shadow-xl xl:px-10">
                 <div className="space-y-4 xl:space-y-6">
@@ -48,7 +49,8 @@ export const Profile = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>   
+        </div>
         </div>
     );
 };
