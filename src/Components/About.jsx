@@ -27,7 +27,7 @@ export const About = () => {
           </h2> 
           <p className="text-grey">
             Let me introduce myself, I am Ananda Puttra, a passionate Junior
-            Developer with foundational experience in web development. I possess
+            Developer with foundational experience in Web Development and UI UX . I possess
             skills in building websites and the ability to collaborate
             effectively within a team to deliver innovative technological
             solutions.

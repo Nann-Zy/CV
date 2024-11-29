@@ -1,5 +1,5 @@
 import React from "react";
-import { FaHtml5, FaCss3Alt, FaLaravel, FaPhp, FaFigma } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaLaravel, FaPhp, FaFigma, FaReact  } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
 export const Skills = () => {
   return (
@@ -38,7 +38,7 @@ export const Skills = () => {
           <p className="mt-2 text-lg">Laravel</p>
         </div>
 
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center ">
           <div className="bg-white shadow-lg p-5 rounded-full">
             <FaPhp className="text-blue-600 text-6xl" /> 
           </div>
@@ -50,6 +50,13 @@ export const Skills = () => {
             <FaFigma className="text-blue-600 text-6xl" /> 
           </div>
           <p className="mt-2 text-lg">Figma</p>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <div className="bg-white shadow-lg p-5 rounded-full">
+            <FaReact  className="text-red-600 text-6xl" /> 
+          </div>
+          <p className="mt-2 text-lg">React Js</p>
         </div>
 
         </div>
