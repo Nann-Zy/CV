@@ -31,7 +31,7 @@ export function Header() {
           Skills
         </a>
         <a
-          href="#"
+          href="#contact"
           onClick={() => handleScroll("contact")}
           className="text-sm text-gray-300 my-5 hover:text-blue-400"  // Mengubah text-lg menjadi text-sm
         >
